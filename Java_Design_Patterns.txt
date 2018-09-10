@@ -1,0 +1,49 @@
+1. Prototype - Design Pattern
+	Deep Cloning an object.--- i.e entirely copy the object to another.. instead of copying references
+	THis is to stop objects being dependent on each other.
+	Initialization is not in our control
+
+Class extends Clonable -- this creates clones of an object.
+
+2. Singleton - one instance of a class or one value accessible globally in an application. 
+	Can be created by private constructor.
+	then the static block are instantiated -- not the instance block. 
+	If we have a private constructor, we need to have a static method to check for object.
+    Eg: Loggers initialization in Debug mode...
+    
+
+3. Factory - Responsibilty of object instantiation. 
+
+4. Builder - Seperates the construction. 
+	if a main class has many arguments.. we can have a builder class to initialize a class with minilmal basic attributes. 
+
+
+---------------------------------------------------------
+
+STRUCTURAL PATTERNS -- 
+
+1. Decorator - Giving extra features to an object at runtime.. 
+	Eg: FileREaders and Buffered Readers 
+
+2. Adapters - It allows the interface of an existing class to be used as another interface. 
+	
+3. Flyweight - Uses sharing to support large numbers of fne-grained objects efficiently. ----- ???
+     WeakHashMap -- has weak references-- i.e whenever an object in Map becomes null, the next garbage cycle clears it. 
+
+4. Proxy -- Provides a surrogate or placeholder for another object to control access it.
+
+5. Facade -- Provides a unified interface to set of interfaces in a subsystem. 
+    Facade has an interface, which has ready objects of other interfaces-- just difference from Factory is that objects are alraedy instantiated here. 
+
+--------------------------------------------------------------
+
+BEHAVIOURAL PATTERNS --
+
+1. Observer - Defines a 1 to many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.  
+	AOP - Aspect oriented programming.. 
+	It can be connected to a listener-- waiting for a message and then event takes place- (Event based trigger)
+
+2. Template Method - define the skeleton of an algorithm in an operation, deferring some steps to subclasses. 
+	It lets the subclasses redefine certain steps of an algorithm without changing the algoritm's structure
+
+	
