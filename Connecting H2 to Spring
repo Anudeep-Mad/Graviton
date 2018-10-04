@@ -1,0 +1,15 @@
+Steps:
+
+Add Maven dependency for H2 db.
+Add these to the spring boot - application.properties.
+`# H2
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2
+Datasource
+spring.datasource.url=jdbc:h2:file:~/deloitte
+spring.datasource.username=admin
+spring.datasource.password=admin123
+spring.datasource.driver-class-name=org.h2.Driver
+spring.h2.console.settings.web-allow-others=true`
+
+The console.path will be used to access the h2 console from browser. IF we host our application on localhost at port 8080. We can access the h2 console using ( localhost:8080/h2 ) i.e the localhost:8080/spring.h2.console.path value from the properties file.
