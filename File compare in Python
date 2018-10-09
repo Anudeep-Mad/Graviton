@@ -1,0 +1,8 @@
+1. Install Microsoft Visual C++ Redistributable for Visual Studio 2017 at https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads
+2. pip3 install diff_match_patch_python
+3. pip3 install diff-match-patch
+4. pip3 install xml_diff
+
+Command to be executed: 
+
+python3 -m xml_diff  --tags del,ins doc1.xml doc2.xml > changes.xml
