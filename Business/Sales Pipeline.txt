@@ -1,0 +1,2 @@
+Sales Pipeline is a visual representation of sales prospects to show where the company is in, in the purchase process.
+
