@@ -1,0 +1,8 @@
+To have cx_Oracle library running in a server for python, we need the following pre-installed. 
+1. we need to have atleast basic version of Oracle. 
+        -  try with yum/apt installer based on the flavour of OS. ( Cent/Ubuntu)
+        -  If unavailable - download the package ( rpm extenstion ) from Oracle official website ( Oracle basic install client for Linux )
+        -  Then go the downloads path and execute yum install <downloaded-filename.rpm>
+        -  Then set the path variables by
+            export LD_LIBRARY_PATH=/usr/lib/oracle/18.3/client64/lib/
+2. gcc - compiler is also requried. 
