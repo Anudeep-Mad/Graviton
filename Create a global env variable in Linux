@@ -1,0 +1,8 @@
+To set a new env variable in Linux.. go the current user's or root's home directory. (/home/username/ or /root) 
+Open the .bash_profile file
+Add the variable in the below format and save the file
+          export LD_LIBRARY_PATH=/usr/lib/oracle/18.3/client64/lib/
+          
+Then restart the session or run the source .bash_profile command ( This command reloads the profile and varibles in the same session ) 
+
+Doing $variable_name will give you the value now 
