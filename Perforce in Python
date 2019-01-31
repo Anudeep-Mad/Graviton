@@ -1,0 +1,15 @@
+To configure P4 in python...
+
+  Install Perforce client P4 in UNix. 
+  
+  Set the env variables --
+    P4PORT = #server:port
+    P4USER = user ( user with which you want to login to perforce )
+    P4CLIENT = clientname ( default value will be the hostname - you can set any value )
+  
+  run "p4 set" on terminal 
+  to check for information on configuration run "p4 info" on terminal.
+  
+  run "p4 set config=config_file_name.txt"
+  
+ 
