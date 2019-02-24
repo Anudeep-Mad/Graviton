@@ -6,6 +6,9 @@ To configure P4 in python...
     P4PORT = #server:port
     P4USER = user ( user with which you want to login to perforce )
     P4CLIENT = clientname ( default value will be the hostname - you can set any value )
+    
+    
+  ----To immediately get the usage of env values set(without restarting the session) run "source .bash_profile" in home directory.
   
   run "p4 set" on terminal 
   to check for information on configuration run "p4 info" on terminal.
