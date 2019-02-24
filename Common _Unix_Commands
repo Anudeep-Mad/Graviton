@@ -1,7 +1,15 @@
+Giving permission on a folder for a specific user:
+
+	setfacl -m u:username:rwx foldername
+
+---------------------------------------------------------------
+PORTS AND PIDS:
+
 To find the PID's of processes running on a port in Windows 
   i. Initially use the command in cmd as Admin ( netstat -a -b ) - THis will list out all the occupied ports
   ii. Use the command (netstat -a -n -o | find "portnumber") - This will return the PID of a process running on a port. 
   
-  LINUX: 
-  
-    i. netstat -pl | grep NAME_OR_PID
+LINUX:   
+  i. netstat -pl | grep NAME_OR_PID
+---------------------------------------------------------------
+
