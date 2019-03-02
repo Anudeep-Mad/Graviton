@@ -1,0 +1,12 @@
+1. To create a storage bucket in GCP - gsutil mb gs://unique-name
+2. Upload file to a bucket - gsutil cp test.dat gs://unique-name
+
+3. Using gcloud commands
+Let's view the list of configuration in our environment. 
+From reading the long, detailed help results in the previous step, we know we can use the command gcloud list.
+  gcloud config list
+
+4. To check how other properties are set, see all properties by calling: gcloud config list --all
+
+
+Check for nginx on a server/VM - ps aux | grep nginx
