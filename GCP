@@ -9,4 +9,18 @@ From reading the long, detailed help results in the previous step, we know we ca
 4. To check how other properties are set, see all properties by calling: gcloud config list --all
 
 
-Check for nginx on a server/VM - ps aux | grep nginx
+To create a virtual machine in gcloud shell - "gcloud compute instances create gcelab2 --zone us-central1-c" - It creates a VM in us-central1-zone.
+  Check for nginx on a server/VM - ps aux | grep nginx
+  
+To create a persistent disk - "gcloud compute disks create mydisk --size=200GB \--zone us-central1-c"
+
+Attaching a persistent disk to a VM - "gcloud compute instances attach-disk gcelab --disk mydisk --zone us-central1-c"
+
+SSH to a VM via gcloud shell - :gcloud compute ssh gcelab --zone us-central1-c"
+
+TO find the disks attached to a VM - "ls -l /dev/disk/by-id/"
+
+Formatting disk - "sudo mkfs.ext4 -F -E lazy_itable_init=0,lazy_journal_init=0,discard /dev/disk/by-id/scsi-0Google_PersistentDisk_persistent-disk-1"
+
+Mounting the disk - sudo mount -o discard,defaults /dev/disk/by-id/scsi-0Google_PersistentDisk_persistent-disk-1 /mnt/mydisk
+
