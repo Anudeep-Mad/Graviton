@@ -1,3 +1,5 @@
+
+
 1. To create a storage bucket in GCP - gsutil mb gs://unique-name
 2. Upload file to a bucket - gsutil cp test.dat gs://unique-name
 
