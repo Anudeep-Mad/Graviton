@@ -1,0 +1,16 @@
+pip install Flask - to install Flask
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+app = Flask(__name__)
+
+@app.route('/')
+def main():
+    return render_template('home.html')
+
+if __name__ == "__main__":
+    app.run(port=8080)
+    
+the render_template function looks for a html file in the templates directory in your app's root folder.
+If we save the above code in a file app.py - the home.html should be present in a directory "templates" parallel to app.py
+
+------------------------------------------------------------------------------------------------------------------------------------------
