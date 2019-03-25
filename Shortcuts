@@ -1,0 +1,10 @@
+Regex to get the details from webpages and get them from multiple patterns. 
+
+Next, type three of a particular character and hit the Enter or Return key. Your line will automatically be created in the spot chosen. The following characters can be used to create a line via AutoFormat. Reference the accompanying screenshot to see what each of these line types actually looks like in Word.
+
+Plain single line: Three hyphens (---)
+Plain double line: Three equal signs (===)
+Broken/dotted line: Three asterisks (***)
+Bold single line: Three underline symbols (___)
+Wavy line: Three tildes (~~~)
+Triple line w/thick center: Three number signs (###)
