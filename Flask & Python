@@ -14,3 +14,22 @@ the render_template function looks for a html file in the templates directory in
 If we save the above code in a file app.py - the home.html should be present in a directory "templates" parallel to app.py
 
 ------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Reading data from a REST endpoint in Python..
+
+1. We can use requests library.. 
+
+import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning  ## This is to skip ssl verification
+requests.packages.urllib3.disable_warnings(InseucreRequestWarning)       ## This is to skip ssl verification
+
+If it is a POST call.. you can provide your request JSON in a dictionary 
+    payload = {"bu":"","geo":"","channel":""}
+
+The request
+
+r = requests.post("<URL>", data=payload, verify=False, auth=('username','password'))
+ data = r.json
+ 
+ data now has the response data in JSON format
