@@ -1,0 +1,19 @@
+The process of converting a certificate to another format and create a JKS ( Java Key Store ) 
+
+-----Obtain a certificate from an trusted CA authority - 
+                      - A certificate file (.crt ) - has the public key 
+                      - A file with the private key ( a .crt file ) 
+                      - And an budle file specifying the list of servers. 
+                      
+1. To convert a .crt file to a PKCS12 ( .p12 ) format --
+        openssl pkcs12 -export -out server.p12 -inkey server.key -in server.crt -certfile CACert.crt
+2. Then extract the public key out of the cert from the above step 
+        openssl pkcs12 -clcerts -nokeys -in ScottSmithExportedCert.pfx -out public_key.pem
+3. Then store the private key in a separate file 
+        openssl pkcs12 -nocerts -in ScottSmithExportedCert.pfx -out private_key.pem
+4. Then createa bundle out of the files from 2 and 3
+        openssl pkcs12 -export -in public_key.pem -inkey private_key.pem -out bundle.p12 -name "Name" -CAfile public_key.pem -caname Scott
+5. Then create a JKS file 
+        keytool -importkeystore -deststorepass "Password" -destkeystore my_keystore.jks -srckeystore bundle.p12 -srcstoretype PKCS12
+       
+ 
