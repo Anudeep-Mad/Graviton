@@ -1,0 +1,16 @@
+ABSTRACTION : 
+    Abstraction means simple things like objects, classes, and variables represent more complex underlying code and data. This is important because it lets avoid repeating the same work multiple times.
+    
+ENCAPSULATION : 
+    Encapsulation is like providing wrappers to access variables. Keeping the variables of a class private and providing their access via public methods.
+    
+INHERITANCE : 
+    Child classess extending parent classes and also inheriting the properties of parent. 
+    
+POLYMORPHISM : 
+    Method Overriding and Overloading.
+    Overriding : Same definition, but change in implementation. 
+    Overloading : Same mehtod, but different parameters. 
+    
+ VIRTUAL FUNCTIONS : 
+    Virtual functions are those, whose functionality can be overridden. There is no key word called Virtual in Java, but all the functions are by default "Virtual" in Java except having final or static. 
