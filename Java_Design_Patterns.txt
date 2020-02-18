@@ -11,8 +11,10 @@ Class extends Clonable -- this creates clones of an object.
 	If we have a private constructor, we need to have a static method to check for object.
     Eg: Loggers initialization in Debug mode...
     
-
+   There are two ways to instantiate Singleton classes - 1. Early instantiation 2. Lazy Instantiation. 
+ 
 3. Factory - Responsibilty of object instantiation. 
+	It has either interfaces or abstract classes - so that child classes can extend the functionality. 
 
 4. Builder - Seperates the construction. 
 	if a main class has many arguments.. we can have a builder class to initialize a class with minilmal basic attributes. 
