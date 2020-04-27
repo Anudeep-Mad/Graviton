@@ -1,0 +1,21 @@
+Download Apache Hadoop - latest version .. !! (Apache website)
+Unzip the file to C directory ( -> since it has the admin priviliges )
+
+Add the environmental variable - HADOOP_HOME -> upto the bin directory.
+
+Also make sure that JAVA 1.8 is installed 
+
+Add JAVA_HOME user variable -> in the bin
+
+Edit the following file in etc/hadoop folder 
+
+core-site.xml
+
+<configuration>
+   <property>
+       <name>fs.defaultFS</name>
+       <value>hdfs://localhost:9000</value>
+   </property>
+</configuration>
+
+
